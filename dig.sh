@@ -26,5 +26,5 @@ do
   nameserver_space=`echo -e "$nameserver" | tr '\n' ',' | tr -d "[:blank:]"`
   ipaddressAAAA_space=`echo -e "$ipaddressAAAA" | tr '\n' ',' | tr -d "[:blank:]"`
 # Outputting to the filename output.csv
-  echo -e "$domain,$ipaddress_space,$ipaddressAAAA_space$nameserver_space" >> output.csv
+#echo -e "$domain,$ipaddress_space,$ipaddressAAAA_space$nameserver_space" >> output.csv
 done < "$1"
